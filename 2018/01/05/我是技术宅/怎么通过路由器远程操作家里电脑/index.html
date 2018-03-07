@@ -86,23 +86,23 @@
 
 
 
-<meta name="description" content="新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。博客既然搭建好，还是要坚持写，废话不多说，进入正题。 今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。">
+<meta name="description" content="新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。 博客既然搭建好，还是要坚持写，废话不多说，进入正题。 今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。">
 <meta name="keywords" content="技术宅,ssh,网络,linux,树莓派">
 <meta property="og:type" content="article">
 <meta property="og:title" content="怎么通过路由器远程操作家里电脑">
 <meta property="og:url" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/index.html">
 <meta property="og:site_name" content="Atyou">
-<meta property="og:description" content="新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。博客既然搭建好，还是要坚持写，废话不多说，进入正题。 今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。">
+<meta property="og:description" content="新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。 博客既然搭建好，还是要坚持写，废话不多说，进入正题。 今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/树莓派.jpg">
 <meta property="og:image" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/错的设置.png">
 <meta property="og:image" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/连接失败.png">
 <meta property="og:image" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/对的设置.png">
 <meta property="og:image" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/连接成功.png">
-<meta property="og:updated_time" content="2018-01-05T14:14:14.000Z">
+<meta property="og:updated_time" content="2018-03-07T14:46:31.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="怎么通过路由器远程操作家里电脑">
-<meta name="twitter:description" content="新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。博客既然搭建好，还是要坚持写，废话不多说，进入正题。 今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。">
+<meta name="twitter:description" content="新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。 博客既然搭建好，还是要坚持写，废话不多说，进入正题。 今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。">
 <meta name="twitter:image" content="http://www.atyou.com/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/树莓派.jpg">
 
 
@@ -364,7 +364,8 @@
       
 
       
-        <p>新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。博客既然搭建好，还是要坚持写，废话不多说，进入正题。</p>
+        <p>新年第一篇博客，文笔不好，口水话多，脑子总感觉还在2017。</p>
+<p>博客既然搭建好，还是要坚持写，废话不多说，进入正题。</p>
 <p>今天来谈谈如何从外网通过家用路由器来访问操作家里的电脑。</p>
 <a id="more"></a>
 <p>为什么会产生这样的需求呢：从任何有网的地方来操作家里的电脑？原因有两个，一是最近在下班时候总是会想起忘干什么事了，但是东西又放在公司的电脑里啊。这个时候就极其渴望能够在家里就能操纵公司电脑。还有就是，最近从学校里面把压箱底的那些电子垃圾搬到住处了，其中就包括大二时候买的树莓派。想着拿也拿过来了，那就打开用用吧，但是键盘也没有啊，光有个显示器只能干瞪眼啊，能用手机电脑随时远程登陆进行各种操作该多好啊！</p>
@@ -378,7 +379,7 @@
 <img src="/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/错的设置.png" title="不正确的路由器设置">
 <p>然后连接试试，用手机打开阿里云App自带的ssh工具，输入IP，账户密码，回车~~~</p>
 <img src="/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/连接失败.png" title="连接失败的设置">
-<p>居然连接失败了…我哪里错了，学了假知识么，计网老师是哲学系毕业的么，在自我怀疑中再次打开百度查查看。这一查果然啊，我学的都没错啊，原因的运营商把常用的服务端口都封了，包括web网页服务的80和443端口，还有这次远程登陆使用的22ssh端口，手机上ssh工具发送的命令根本不可能到达路由器这里啊。</p>
+<p>居然连接失败了…我哪里错了，学了假知识么，计网老师是哲学系毕业的么，在自我怀疑中再次打开百度查查看。这一查果然啊，我学的都没错啊，原因是运营商把常用的服务端口都封了，包括web网页服务的80和443端口，还有这次远程登陆使用的22ssh端口，手机上ssh工具发送的命令根本不可能到达路由器这里啊。</p>
 <p>然后我把路由器设置成这样：</p>
 <img src="/2018/01/05/我是技术宅/怎么通过路由器远程操作家里电脑/对的设置.png" title="正确的路由器设置">
 <p>果不其然，换个不常用端口，运营商没有封，完美解决问题。远程登陆成功。</p>
@@ -425,6 +426,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/07/产品经理的道与术/23岁的我对产品经理的认识/" rel="prev" title="23岁的我对产品经理的认识">
+                23岁的我对产品经理的认识 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -498,7 +515,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -509,7 +526,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -520,7 +537,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
