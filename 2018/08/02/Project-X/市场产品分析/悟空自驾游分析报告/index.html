@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="悟空自驾游,分析报告,租车,旅游," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="引言前两天在招聘网站上看到悟空自驾游的招聘信息，挺有意思的旅游出行方式，也是我较感兴趣的方向。然后就研究了下公司的发展和业务，最终写下此文，以备后查 。 本文主要分析悟空自驾游，而不是悟空租车，但两者师出同门，却又各有侧重。文章首先从时间线上梳理了悟空自驾游的来历以及公司历史，然后粗略总结了悟空自驾游的业务内容；出于好奇，又体验了悟空自驾游的App并给出了一些个人见解；最后对本次分析报告做了总结。">
+<meta name="keywords" content="悟空自驾游,分析报告,租车,旅游">
+<meta property="og:type" content="article">
+<meta property="og:title" content="悟空自驾游分析报告">
+<meta property="og:url" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/index.html">
+<meta property="og:site_name" content="atyou">
+<meta property="og:description" content="引言前两天在招聘网站上看到悟空自驾游的招聘信息，挺有意思的旅游出行方式，也是我较感兴趣的方向。然后就研究了下公司的发展和业务，最终写下此文，以备后查 。 本文主要分析悟空自驾游，而不是悟空租车，但两者师出同门，却又各有侧重。文章首先从时间线上梳理了悟空自驾游的来历以及公司历史，然后粗略总结了悟空自驾游的业务内容；出于好奇，又体验了悟空自驾游的App并给出了一些个人见解；最后对本次分析报告做了总结。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/融资历程.jpg">
+<meta property="og:image" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/悟空自驾游.png">
+<meta property="og:image" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/首页.png">
+<meta property="og:image" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/用车.png">
+<meta property="og:image" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/我.png">
+<meta property="og:updated_time" content="2018-08-02T08:34:13.333Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="悟空自驾游分析报告">
+<meta name="twitter:description" content="引言前两天在招聘网站上看到悟空自驾游的招聘信息，挺有意思的旅游出行方式，也是我较感兴趣的方向。然后就研究了下公司的发展和业务，最终写下此文，以备后查 。 本文主要分析悟空自驾游，而不是悟空租车，但两者师出同门，却又各有侧重。文章首先从时间线上梳理了悟空自驾游的来历以及公司历史，然后粗略总结了悟空自驾游的业务内容；出于好奇，又体验了悟空自驾游的App并给出了一些个人见解；最后对本次分析报告做了总结。">
+<meta name="twitter:image" content="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/融资历程.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/"/>
+
+
+
+
+
+  <title>悟空自驾游分析报告 | atyou</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">atyou</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">搞不懂你们正常人</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.atyou.ink/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="老乐">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="atyou">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">悟空自驾游分析报告</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-02T16:16:19+08:00">
+                2018-08-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Project-X/" itemprop="url" rel="index">
+                    <span itemprop="name">Project X</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Project-X/市场产品分析/" itemprop="url" rel="index">
+                    <span itemprop="name">市场产品分析</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye">  阅读次数</i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>前两天在招聘网站上看到悟空自驾游的招聘信息，挺有意思的旅游出行方式，也是我较感兴趣的方向。然后就研究了下公司的发展和业务，最终写下此文，以备后查 。</p>
+<p>本文主要分析悟空自驾游，而不是悟空租车，但两者师出同门，却又各有侧重。文章首先从时间线上梳理了悟空自驾游的来历以及公司历史，然后粗略总结了悟空自驾游的业务内容；出于好奇，又体验了悟空自驾游的App并给出了一些个人见解；最后对本次分析报告做了总结。</p>
+<a id="more"></a>
+<h3 id="公司发展大事记"><a href="#公司发展大事记" class="headerlink" title="公司发展大事记"></a>公司发展大事记</h3><ul>
+<li>2014.8 公司成立</li>
+<li>2015.2 获紫辉创投天使轮融资</li>
+<li>2015.3 悟空租车APP正式上线</li>
+<li>2015.4 获紫辉创投、金科君创天使+轮融资</li>
+<li>2015.9 无人自助取还车系统上线</li>
+<li>2015.12 获PreA轮融资</li>
+<li>2016.2 启动全国网点扩展计划</li>
+<li>2016.5 获得A轮融资，博将资本领投，徐小平、周鸿祎等跟投，全国城市覆盖达200+</li>
+<li>2016.6 被评为中关村高新技术企业</li>
+<li>2016.7 获得北京市科委创新创业专项基金资助</li>
+<li>2016.12 被评为国家高新技术企业，旗下品牌“悟空自驾游”在云南落地</li>
+<li>2017.3 开启全国品牌授权加盟模式，建立标准化品牌授权形象店</li>
+<li>2017.6 完成B轮融资，由云南城投集团旗下成都会展、瑞滇投资和邓鸿个人投资</li>
+<li>2017.7 悟空租车旗下品牌“悟空自驾游”产品正式上线</li>
+</ul>
+<h3 id="融资历程"><a href="#融资历程" class="headerlink" title="融资历程"></a>融资历程</h3><img src="/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/融资历程.jpg" title="融资历程">  
+<h3 id="悟空租车组织架构"><a href="#悟空租车组织架构" class="headerlink" title="悟空租车组织架构"></a>悟空租车组织架构</h3><p>悟空租车隶属于脚印兄弟（北京）信息科技有限责任公司，北京悟空出行科技有限公司为脚印兄弟（北京）信息科技有限责任公司的<strong>全资子公司</strong>，负责平台的运营。 </p>
+<h3 id="悟空自驾游组织架构"><a href="#悟空自驾游组织架构" class="headerlink" title="悟空自驾游组织架构"></a>悟空自驾游组织架构</h3><p>云南城投集团通过旗下成都新世纪城国际会展有限公司及瑞滇投资管理有限公司，<strong>战略投资</strong>脚印兄弟（北京）信息科技有限责任公司（品牌简称：悟空租车），再通过云南城投集团旗下控股子公司与悟空租车<strong>合资</strong>在云南成立落地实体运营公司——香格里拉市悟空出行科技有限公司，具体负责悟空自驾游项目的运营及实施。 </p>
+<h3 id="云南城投情况"><a href="#云南城投情况" class="headerlink" title="云南城投情况"></a>云南城投情况</h3><p>房地产行业已经进入了存量寡头竞争的阶段，云南城投最近通过频繁收购并购扩大体量（超300亿），问题有高负债率、巨额担保、利息支出大、盈利表现不稳定等。</p>
+<h3 id="悟空租车简介"><a href="#悟空租车简介" class="headerlink" title="悟空租车简介"></a>悟空租车简介</h3><p>悟空租车采取一种叫B2P的模式切入租车服务市场，它更像是一个平台，将全国范围内分散的中小型租车公司的资源整合，经过悟空租车抓取的车源在平台的管理下，提供更加成熟完善的服务。相比较重资产投入自组车队的方式，这种方式更加灵活，可以将有限的资源投入到车辆运营上去。</p>
+<h3 id="悟空自驾游"><a href="#悟空自驾游" class="headerlink" title="悟空自驾游"></a>悟空自驾游</h3><p>悟空自驾游通过自身已有租车服务，加上云南城投在云南的景区、酒店等资源，打造出了“租车+旅游”的全新云南旅行打开方式。即以汽车租赁为依托，打造围绕自驾游出行场景的服务。 自驾旅游途中的吃、住、行、游、购、娱这些都是市场，悟空自驾游的模式要是能推行，那想象空间真的不要太可怕。</p>
+<p>其实“租车+旅游”这种模式想过的人应该不少，问题的核心是上哪里搞那么多资源提供一条龙服务？</p>
+<ul>
+<li><p>首先最基本的是要有车和管理车的方法。</p>
+<p>对于悟空自驾游来说，车来自自家B2P模式中全国的中小租车公司，以及自建的高品质车队（悟空自驾游与广汽菲亚特克莱斯勒汽车有限公司、华夏出行有限公司、上汽通用汽车有限公司举行了战略合作签约仪式，并宣布购买多款高端车辆，为用户提供更优质的服务）。如何管理车？提供租车服务的公司那么多，业界应该有成熟的方案（此处还需要考证）。对于用户来说，最想要的结果是和使用共享单车一样，回家时候随手一停就行。但是车随手停不太可能，目前悟空自驾游的方式是在机场、车站附近建立停车点，利用云南城投的资源，悟空自驾游可以在云南做到这点：能最大化满足用户不用即停的需求痛点，而且是异地还车。这也是此模式推广起来的难点所在，因为其他省没有谁能给你随意停车了，停车点需要一个一个，一家一家谈下来，太耗费精力。这里还有个问题，自家车队可以实现不用即停，但是加盟公司的中小租车公司的车就要考虑考虑怎么办？我感觉悟空自驾游的战略是这样：中小租车公司成为悟空自驾游的汽车提供商，而悟空自驾游自己的车走高端精品路线。</p>
+</li>
+<li><p>有了车和管理办法，其次需要考虑的问题是旅途中的吃、住、行、游、购、娱等一条龙服务如何搭建。</p>
+<p>目前悟空自驾游的做法是，先开发旅游路线，以景点为节点，在景点附近给用户规划好吃、住、行、游、购、娱，用户下单购买。但目前来看，吃采用推荐的方式；住给用户预定了酒店；行是采用自家的租车自驾服务；游给用户预定了景点门票；购目前来看是用户自由发挥；娱的话比较宽泛，目前提供的可选物资单反、无人机等等算是一种娱乐。整体看下来，提供一条龙服务用户是爽到了，但是对企业来说事情太多太杂，有点像搞机圈里的供应链管理：和酒店要谈，和景点要谈，车辆管理要谈，就连用户租车时候选配的一条毛巾这些都需要管理。当然这里面的酒店、景点好多是云南城投的资源，双方合作可以一次对接。但如果在其他省份推行起来，那肯定是太耗费精力的。</p>
+<p>关于一条龙服务的搭建，我有个不怎么靠谱的想法：一是开放商家注册，让提供吃、住、行、游、购、娱的商家都可以到平台注册，也就是做成美团的形式；二是做成美团后用户可以自由选择，悟空自驾游提供最基本的出行服务和景点服务，其他服务用户在平台选购。但这种做法确实有点不靠谱，因为大多数用户只想被安排得明明白白，不想有太多选择，而且云南城投的利益会受损。但这种做法确实能节省很多供应链的管理成本，模式推广起来也容易了一些。</p>
+</li>
+<li><p>最后还要考虑的问题是，如何保障用户的安全问题。</p>
+<p>这个问题其实无解，也就只能多给用户买些保险吧。你看这么一说，用户的保险也需要和保险公司谈，出事怎么处理需要考虑，提供一条龙服务事情确实很多很杂，这些都是需要投入大量资源才能做好的，对于创业公司来说，挑战比较大。</p>
+</li>
+</ul>
+<p>悟空自驾游之后可能的发展思路：一是继续开发优化旅游路线，以期达到更好的用户体验；二是对供应链进行梳理，找出一套适合自家的供应链管理方法；三是开发其他形式的旅游产品，让用户有更加多样的选择，目前官网说的境外旅游就挺好，还有自驾露营等等形式。</p>
+<h3 id="悟空自驾游App体验报告"><a href="#悟空自驾游App体验报告" class="headerlink" title="悟空自驾游App体验报告"></a>悟空自驾游App体验报告</h3><p>悟空自驾游提供的服务其实比较复杂的，并不太适合微信小程序，所以做一个专有App还是有必要的。出于职业习惯，我下载了App进行了体验。</p>
+<p>首先我的用户画像是，职场小白，没啥收入，知道有这么一家提供自驾游的公司，想看看里面的服务怎么样，是不是足够让人动心。体验设备小米MIX2。</p>
+<h4 id="App的信息架构图"><a href="#App的信息架构图" class="headerlink" title="App的信息架构图"></a>App的信息架构图</h4><img src="/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/悟空自驾游.png">  
+<h4 id="第一印象"><a href="#第一印象" class="headerlink" title="第一印象"></a>第一印象</h4><p>App在小米应用商店没有任何用户评价，这让我挺诧异的。打开App我的第一感觉是惊艳，AR全景页面很有意思，玩了好一会儿。但是！但是！为啥我第二次启动依然有这个页面，从正常用户心理来看，这只是一个启动页，我再次打开你的App是要使用里面的服务了，而不是盯着启动页玩。（系统设置可以关闭，不过藏得真的好深）如果想让用户反复体验，那就应该放在景点介绍里面，当作一个运营的事来做，这个待会儿再细说。</p>
+<p>当我进入App后，其实是有点不知所措的。因为我只是想了解旅游路线，以及能享受什么服务。但是，首先首页的六个按钮让我不知道什么意思，头部Banner其实作用也不大的。然后我绝望地往下滑，终于看到感兴趣的东西了，旅游路线！不过这里有些不合理：对沿途风景介绍过少，对整个游行过程、注意事项介绍过多。我认为原则上整个App设计应该是这样：首先有足够优美的旅游信息吸引我，驱使我心生向往，然后自觉的了解公司能提供的各种贴心服务，最终受不了诱惑，达成下单。</p>
+<h4 id="我的想法"><a href="#我的想法" class="headerlink" title="我的想法"></a>我的想法</h4><p>在不考虑成本和实现的前提下，小弟斗胆发挥自己的想象，将悟空自驾游App改造一番。</p>
+<ul>
+<li><p>启动页</p>
+<p>启动页首次打开App保留现在的形式，但是之后再打开都是直接进入首页。</p>
+</li>
+<li><p>首页</p>
+<p>首页改造如下图。首页改造为信息流的形式，在页面顶部加入Tab选项卡，分别是推荐路线、自助自驾、车+X、跟团自驾。左上角加入扫码按钮，在用车时扫车使用，右上角为筛选按钮。各种推荐路线构成的信息流，采用宣传视频形式勾起用户的旅游欲望。底部Tab，分别是首页、城市、用车、我。</p>
+<p>将原来的产品列表提到首页，重点更加清晰明了。</p>
+<p>旅途风光采用视频方式在信息流里进行展示，让用户打开App就能深刻感受大云南的美。此处涉及到我们需要自己的视频拍摄团队，在开发旅行路线时，视频团队和路线开发团队一起协作，视频团队负责拍下沿途风光，并制作成为App首页进行展示的宣传视频。而且，制作好的视频可以用于各个宣传渠道，例如微博（我看悟空自驾游的微博就很不活跃啊，没人运营一样）。</p>
+<p>加入用车扫码主要是参考目前共享汽车的使用模式，对用户用车过程有所监控，并且可以将旅游路线和地图结合起来，提供导航服务。</p>
+<img src="/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/首页.png">  
+</li>
+<li><p>城市页</p>
+<p>城市页就是以前的目的地页，之所以改了个名字是因为我在第一次使用App时产生了误解，目的地页我以为是选择目的地，然后给我推荐路线。想不到居然是介绍城市的，那不如干脆就叫城市。介绍内容上我们可以采取视频+图文的形式，或者AR的形式，多角度展示城市魅力，勾起用户的旅游欲望。参考互联网内容行业的发展，视频拍得好是可以产生巨大的流量效应，具体案例本人也写过一些分析。</p>
+</li>
+<li><p>用车页</p>
+<p>用车页是一个全新的页面，主要是考虑到与悟空租车的嫁接，而且用户到达目的地用车时也是有强烈的导航需求的，一旦用户用的车在App上登记，那么我们可以拿到很多用户旅途数据进行数据分析，以此进行路线优化。</p>
+<img src="/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/用车.png">  
+</li>
+<li><p>我的页</p>
+<p>我的页和原来相同，主要是将客服和常见问题移动到了我的页的侧边按钮。如下图，原来的设计中常见问题解答这种支持服务占用一个主页面，虽然不知道悟空自驾游的产品大佬出于什么考虑，但我总觉得太奢侈。</p>
+<img src="/2018/08/02/Project-X/市场产品分析/悟空自驾游分析报告/我.png">  
+</li>
+</ul>
+<h3 id="关于运营的一点想法"><a href="#关于运营的一点想法" class="headerlink" title="关于运营的一点想法"></a>关于运营的一点想法</h3><p>初识悟空自驾游我是比较感兴趣的，但是我到微博搜索，百度搜索后才发现，话题很少，基本都是些大事记的媒体报道，很少有用户自发讨论。我认为，旅游这种行业让用户参与进行，形成讨论应该还是比较容易的，至少比我现在所处的法律行业容易。但是我看到的是悟空自驾游的微博并没有认真运营的感觉，还有我说的应用商店没有评价，App里面的旅游路线也没有评论。其实这些或多或少都和运营不上心有关系。我看招聘信息上说“提高用户存留和转化”，官方应该也意识到问题所在了。</p>
+<p>我这里提供两点运营思路：</p>
+<p>一是加强优秀内容的制作和宣传，包括视频，图文，甚至AR全景图等等，比如App里面“目的地”一页其实可以搞很多事情。搞旅游最不缺的优秀文化内容，把这些东西收集整理起来给用户一看，美到流哈喇子那种，既做了品牌宣传，又可以转化用户。</p>
+<p>二是加强用户互动，微信，微博，知乎，抖音等等全渠道铺开啊，舍不得成本，转化不了用户。你看昆明教场中路几个花开了都可以在抖音火一把，云南景色那么美，把短视频拍好一点，再火无数次也是应该的。重点是需要有人用心运营。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>对悟空自驾游的分析到此告一段落了，整体来说，悟空自驾游算是给租车行业指明一条发展道路：租车+，就是以租车为基础服务，在此之上进行扩充。不过悟空自驾游的租车+旅游，虽然玩法新颖，前景诱人，但确实投资过大，需要极强的管理运营能力才能把事做好，是机遇也是挑战。<br>注：文章的分析资料来自悟空租车官网、悟空自驾游官网（搜集资料过程还发现了悟空租车官网的一点小错误），还有来自网上公开报道的资料。由于本人对租车行业、旅游行业知之甚少，除了公开资料，好多分析脑补成分偏多，不一定是事实如此，各位看官理性看待。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/悟空自驾游/" rel="tag"># 悟空自驾游</a>
+          
+            <a href="/tags/分析报告/" rel="tag"># 分析报告</a>
+          
+            <a href="/tags/租车/" rel="tag"># 租车</a>
+          
+            <a href="/tags/旅游/" rel="tag"># 旅游</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/29/个人知识学习库/文案模板/文案模板制作/" rel="next" title="文案模板制作">
+                <i class="fa fa-chevron-left"></i> 文案模板制作
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjc4NS85MzQ2"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpg"
+                alt="老乐" />
+            
+              <p class="site-author-name" itemprop="name">老乐</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://weibo.com/u/5293559914" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公司发展大事记"><span class="nav-number">2.</span> <span class="nav-text">公司发展大事记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#融资历程"><span class="nav-number">3.</span> <span class="nav-text">融资历程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悟空租车组织架构"><span class="nav-number">4.</span> <span class="nav-text">悟空租车组织架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悟空自驾游组织架构"><span class="nav-number">5.</span> <span class="nav-text">悟空自驾游组织架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#云南城投情况"><span class="nav-number">6.</span> <span class="nav-text">云南城投情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悟空租车简介"><span class="nav-number">7.</span> <span class="nav-text">悟空租车简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悟空自驾游"><span class="nav-number">8.</span> <span class="nav-text">悟空自驾游</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悟空自驾游App体验报告"><span class="nav-number">9.</span> <span class="nav-text">悟空自驾游App体验报告</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#App的信息架构图"><span class="nav-number">9.1.</span> <span class="nav-text">App的信息架构图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第一印象"><span class="nav-number">9.2.</span> <span class="nav-text">第一印象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#我的想法"><span class="nav-number">9.3.</span> <span class="nav-text">我的想法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于运营的一点想法"><span class="nav-number">10.</span> <span class="nav-text">关于运营的一点想法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">11.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">老乐</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
