@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="技术宅,linux,服务器,容器," />
+  <meta name="keywords" content="服务器,技术宅,linux,容器," />
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。s">
-<meta name="keywords" content="技术宅,linux,服务器,容器">
+<meta name="description" content="学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。">
+<meta name="keywords" content="服务器,技术宅,linux,容器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="服务器买来三步走">
 <meta property="og:url" content="https://www.atyou.ink/2018/12/19/我是技术宅/服务器买来三步走/index.html">
 <meta property="og:site_name" content="atyou">
-<meta property="og:description" content="学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。s">
+<meta property="og:description" content="学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-19T13:27:48.974Z">
+<meta property="og:updated_time" content="2018-12-19T13:36:12.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="服务器买来三步走">
-<meta name="twitter:description" content="学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。s">
+<meta name="twitter:description" content="学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。">
 
 
 
@@ -358,7 +358,7 @@
       
 
       
-        <p>学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。s</p>
+        <p>学习Docker，但由于树莓派死活装不上Docker，今天又买了个阿里云的服务器（ubuntu 16.04）。记录一下进行的操作。</p>
 <a id="more"></a>
 <p>阿里云购买安装修改root密码就不说了，从第一次登录开始说起吧。</p>
 <h3 id="第一步-用户管理"><a href="#第一步-用户管理" class="headerlink" title="第一步 用户管理"></a>第一步 用户管理</h3><p>新增用户，<a href="https://www.cnblogs.com/clover-siyecao/p/5573642.html" target="_blank" rel="noopener">参考这儿。</a></p>
@@ -380,15 +380,15 @@
 <p>修改zsh主题为random模式</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vim ./.zshrc</span><br><span class="line"># 修改 ZSH_THEME=&quot;random&quot;</span><br><span class="line"># 保存退出</span><br></pre></td></tr></table></figure>
 <p>退出终端，重新登录</p>
-<h3 id="第三步-安装Docker"><a href="#第三步-安装Docker" class="headerlink" title="第三步 安装Docker"></a>第三步 安装Docker</h3><p>安装HTTPS传输的软件s包/CA证书</p>
+<h3 id="第三步-安装Docker"><a href="#第三步-安装Docker" class="headerlink" title="第三步 安装Docker"></a>第三步 安装Docker</h3><p>安装HTTPS传输的软件包/CA证书</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install \ </span><br><span class="line">	apt-transport-https \ </span><br><span class="line">	ca-certificates \ </span><br><span class="line">	curl \ </span><br><span class="line">	software-properties-common</span><br></pre></td></tr></table></figure>
-<p>添加阿里云的docker源（鉴于GFW）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 加GPG密钥</span><br><span class="line">curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -</span><br><span class="line"></span><br><span class="line"># 加Docker软件源</span><br><span class="line">sudo add-apt-repository \</span><br><span class="line">	&quot;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-			ce/linux/ubuntu \</span><br><span class="line">	$(lsb_release -cs) \ </span><br><span class="line">	stable&quot;</span><br></pre></td></tr></table></figure>
-<p>安装docker</p>
+<p>添加阿里云的Docker源（鉴于GFW）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 加GPG密钥</span><br><span class="line">curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -</span><br><span class="line"></span><br><span class="line"># 加Docker软件源</span><br><span class="line">sudo add-apt-repository \</span><br><span class="line">	&quot;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu \</span><br><span class="line">	$(lsb_release -cs) \ </span><br><span class="line">	stable&quot;</span><br></pre></td></tr></table></figure>
+<p>安装Docker</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install docker-ce</span><br></pre></td></tr></table></figure>
 <p>开机自启动</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl enable docker</span><br><span class="line">sudo systemctl start docker</span><br><span class="line"></span><br><span class="line"># ubuntu 14.04用命令：</span><br><span class="line"># sudo service docker start</span><br></pre></td></tr></table></figure>
-<p>docker 默认只要root用户和docker组用户可以访问Docker引擎，所以添加docker组：</p>
+<p>Docker 默认只要root用户和docker组用户可以访问Docker引擎，所以添加docker组：</p>
 <figure class="highlight plain"><figcaption><span>groupadd docker</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo groupadd docker</span><br></pre></td></tr></table></figure>
 <p>将当前用户laole加到docker组</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo usermod -aG docker $USER</span><br></pre></td></tr></table></figure>
@@ -413,11 +413,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
+          
             <a href="/tags/技术宅/" rel="tag"># 技术宅</a>
           
             <a href="/tags/linux/" rel="tag"># linux</a>
-          
-            <a href="/tags/服务器/" rel="tag"># 服务器</a>
           
             <a href="/tags/容器/" rel="tag"># 容器</a>
           
@@ -441,6 +441,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/27/五味杂谈/生活真的在别处么/" rel="prev" title="生活真的在别处么">
+                生活真的在别处么 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -526,7 +530,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -548,7 +552,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">59</span>
+                  <span class="site-state-item-count">62</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
